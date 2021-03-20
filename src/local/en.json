@@ -1,0 +1,9 @@
+{
+    "dashboard": "Dashboard",
+    "customers": "Customers",
+    "profile": "Profile",
+    "logout": "Logout",
+    "customers-list": "Customer List",
+    "customers-detail": "Customer Detail",
+    "detail": "Detail"
+}

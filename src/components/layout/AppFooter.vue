@@ -1,0 +1,48 @@
+<template>
+    <v-footer>
+        <v-container>
+            <v-row align="center" no-gutters>
+                <v-col
+                    v-for="(link, i) in links"
+                    :key="i"
+                    class="text-center mb-sm-0 mb-5"
+                    cols="auto"
+                >
+                    <v-btn
+                        class="mr-0 grey--text text--darken-3"
+                        :to="link.href"
+                        text
+                        small
+                        v-text="link.text"
+                    ></v-btn>
+                </v-col>
+
+                <v-spacer class="hidden-sm-and-down" />
+
+                <v-col cols="12" md="auto">
+                    <div
+                        class="body-1 font-weight-light pt-6 pt-md-0 text-center"
+                    >
+                        &copy; {{ new Date().getFullYear() }}, made with
+                        <v-icon size="18">mdi-heart</v-icon> by Sam.
+                    </div>
+                </v-col>
+            </v-row>
+        </v-container>
+    </v-footer>
+</template>
+
+<script>
+export default {
+    name: 'AppFooter',
+
+    data: () => ({
+        links: [
+            {
+                href: '/dashboard',
+                text: 'Dashboard',
+            },
+        ],
+    }),
+};
+</script>

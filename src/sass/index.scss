@@ -1,0 +1,9 @@
+.content-container {
+    min-height: calc(100vh - 139px);
+}
+
+#venus-toast {
+    .v-snack {
+        padding-top: 75px !important;
+    }
+}
