@@ -1,18 +1,22 @@
-# venus-spa
+# JBA-demo
 
-## Project setup
+## Install dependencies
 
 ```shell
 npm install
+
 or
+
 yarn install
 ```
 
-### Compiles and hot-reloads for development
+### Run the project
 
 ```shell
-npm run serve
+npm run dev
+
 or
+
 yarn dev
 ```
 
@@ -20,41 +24,12 @@ yarn dev
 
 ```shell
 npm run build
+
 or
+
 yarn build
 ```
 
-### Run your unit tests
+### DEMO
 
-```shell
-npm run test:unit
-```
-
-### Deploy on Linux
-
-```shell
-
-# step 1: build in local environment
-# /config => baseUrl => pro indicates that the profix of APIs in product env'
-
-# The attribute pro of baseUrl should correctly correspond to '.com' or '.cn' base on Linux server position
-
-npm run build
-or
-yarn build
-
-# step 2: commit code to master branch
-
-git push
-
-# step 3: pull latest code in Linux
-# The code must be builded in local environment and then push it on remote master branch.
-# The code will do not be builded in Linux, so make sure your code is avaliable for production env.
-
-cd /var/www/venus-spa
-
-git pull
-
-# step 4: To check the website https://venus.buyanz.com if it works well.
-
-```
+online demo: [https://jba.keenneed.com](https://jba.keenneed.com)
