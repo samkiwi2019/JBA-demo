@@ -18,6 +18,7 @@
                             {{ item.title }}
                         </h4>
                         <v-spacer />
+                        <!-- buttons for sorting chart and changing chart style  -->
                         <v-btn
                             small
                             :color="item.color"
@@ -67,6 +68,7 @@
                                 >DESC</span
                             >
                         </v-btn>
+                        <!-- buttons for sorting chart and changing chart style ending -->
                     </div>
 
                     <p class="d-inline-flex font-weight-light ml-2 mt-1">

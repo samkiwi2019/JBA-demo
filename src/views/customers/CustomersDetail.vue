@@ -1,5 +1,6 @@
 <template>
     <v-container fluid tag="section" class="content-container">
+        <!-- breadcrumbs start -->
         <v-breadcrumbs :items="items">
             <template v-slot:item="{ item }">
                 <v-breadcrumbs-item :href="item.href" :disabled="item.disabled">
@@ -7,7 +8,9 @@
                 </v-breadcrumbs-item>
             </template>
         </v-breadcrumbs>
+        <!-- breadcrumbs end -->
 
+        <!-- user card start -->
         <v-row justify="center">
             <v-col cols="12" lg="6" md="8" sm="10">
                 <base-material-card
@@ -46,6 +49,7 @@
                 </base-material-card>
             </v-col>
         </v-row>
+        <!-- user card start -->
     </v-container>
 </template>
 

@@ -1,6 +1,6 @@
 <template>
     <v-main>
-        <router-view :key="$router.name" />
+        <router-view />
         <app-footer />
     </v-main>
 </template>

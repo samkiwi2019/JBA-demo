@@ -44,6 +44,7 @@ const actions = {
         });
         commit('SET_ITEMS_BY_AGE', byAge(state.items));
     },
+
     splitDataByGenderGroup({ state, commit }) {
         if (!R.isEmpty(state.itemsByGender)) return; // it will only be executed when "itemsByGender" is empty.
         const byGender = R.groupBy((item) => item.gender);

@@ -160,7 +160,7 @@ export default {
             });
         },
         /**
-         * Generate new menu items data mixed with i18n according to this.items
+         * Generate new menu items data mixed with i18n
          */
         mapItem(item) {
             return {

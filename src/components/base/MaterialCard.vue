@@ -9,7 +9,7 @@
             >
                 <v-img src="@/assets/avatar.jpg" />
             </v-avatar>
-
+            <!-- Multi-purpose panel start -->
             <v-sheet
                 v-else
                 :class="{
@@ -40,6 +40,9 @@
                     v-text="text"
                 />
             </v-sheet>
+            <!-- Multi-purpose panel end-->
+
+            <!-- function addition start -->
             <div v-if="$slots['after-heading']" class="ml6">
                 <slot name="after-heading" />
             </div>
@@ -52,7 +55,9 @@
             <div v-else-if="icon && title" class="ml-4">
                 <div class="card-title font-weight-light" v-text="title" />
             </div>
+            <!-- Function addition end -->
         </div>
+
         <slot />
 
         <template v-if="$slots.actions">

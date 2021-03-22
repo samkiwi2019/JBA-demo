@@ -64,6 +64,8 @@ export default {
             await this.$nextTick();
             this.updateChart();
         },
+
+        // Compatible with the display of doughnut chart in extremely small width.
         updateChart() {
             if (this.type == 'doughnut') {
                 if (this.chartInstance.width <= 420) {

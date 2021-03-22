@@ -61,12 +61,17 @@ export default {
             };
         },
 
+        // computing data sorted for full gender
         genderGroupData() {
             const { sort, type } = this.convertibleChartOptions;
+
+            // Turn the object into an unsorted array with a one-to-one correspondence
             const genders = Object.keys(this.itemsByGender);
             const sumByGender = genders.map(
                 (item) => this.itemsByGender[item].length
             );
+
+            // Make sure that the data is sorted after one-to-one correspondence.
             const combineItems = sumByGender
                 .map((item, index) => ({
                     key: genders[index],
@@ -76,6 +81,7 @@ export default {
                     sort === 'asc' ? a.val - b.val : b.val - a.val
                 );
 
+            // After sorting, split the data again and then obtain the chart data structure.
             const sortedData = combineItems.map((x) => x.val);
             const sortedLabers = combineItems.map((x) => x.key);
 

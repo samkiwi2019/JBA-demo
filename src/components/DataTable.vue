@@ -204,7 +204,7 @@ export default {
                 {
                     text: 'Gender',
                     value: 'gender',
-                    filterable: false,
+                    filterable: true,
                     sortable: false,
                 },
                 {
