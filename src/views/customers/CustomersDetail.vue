@@ -25,24 +25,23 @@
                         </h4>
 
                         <div class="d-flex flex-column justify-start">
-                            <div class="font-weight-light grey--text">
+                            <div class="grey--text">
                                 Gender:
                                 <strong>{{ user.gender }}</strong>
                             </div>
-                            <div class="font-weight-light grey--text">
+                            <div class="grey--text">
                                 Age:
                                 <strong>{{ user.age }}</strong>
                             </div>
-                            <div class="font-weight-light grey--text">
+                            <div class="grey--text">
                                 Car make:
                                 <strong>{{ user.car_make }}</strong>
                             </div>
-                            <div class="font-weight-light grey--text">
+                            <div class="grey--text">
                                 Email:
-                                <strong
-                                    :style="`color:${$vuetify.theme.themes['light'].primary}`"
-                                    >{{ user.email }}</strong
-                                >
+                                <strong class="primary--text">{{
+                                    user.email
+                                }}</strong>
                             </div>
                         </div>
                     </v-card-text>
@@ -76,9 +75,11 @@ export default {
             customers: (state) => state.config.items,
         }),
         user() {
-            return this.customers.filter(
-                (item) => +item.id === +this.$route.params.customerId
-            )[0];
+            return (
+                this.customers.filter(
+                    (item) => +item.id === +this.$route.params.customerId
+                )[0] || {}
+            );
         },
     },
 };

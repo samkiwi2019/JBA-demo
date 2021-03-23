@@ -20,6 +20,16 @@ or
 yarn dev
 ```
 
+### Unit test
+
+```shell
+npm run test:unit
+
+or
+
+yarn test:unit
+```
+
 ### Compiles and minifies for production
 
 ```shell
