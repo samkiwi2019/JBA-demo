@@ -69,47 +69,13 @@
                     <!-- search and filter end-->
                 </template>
 
-                <!-- update and delete todo start-->
+                <!-- actions -->
                 <template v-slot:item.actions="{ item }">
                     <v-icon color="info" class="mr-5" @click="showDetail(item)"
                         >mdi-arrow-expand-all</v-icon
                     >
                 </template>
 
-                <template v-slot:item.status="{ item }">
-                    <div>
-                        <v-chip
-                            class="ma-2"
-                            color="green"
-                            text-color="white"
-                            v-if="item.status === 1"
-                        >
-                            Visible
-                        </v-chip>
-                        <v-chip text-color="white" color="secondary" v-else>
-                            Invisible
-                        </v-chip>
-                    </div>
-                </template>
-                <template v-slot:item.createdAt="{ item }">
-                    <div>{{ formatTime(item.createdAt) }}</div>
-                </template>
-
-                <template v-slot:item.updatedAt="{ item }">
-                    <div>{{ formatTime(item.updatedAt) }}</div>
-                </template>
-
-                <template v-slot:item.imagePC="{ item }">
-                    <div class="pa-2">
-                        <v-img
-                            :lazy-src="getUrl(item.imagePC)"
-                            max-height="100"
-                            max-width="200"
-                            :src="getUrl(item.imagePC)"
-                        ></v-img>
-                    </div>
-                </template>
-                <!-- update and delete todo end-->
             </v-data-table>
             <div class="d-flex justify-sm-space-between justify-center">
                 <div style="width: 80px;" class="mt-6 d-none d-sm-flex">
