@@ -118,22 +118,29 @@ export default {
 };
 </script>
 
-<style lang="sass" scoped>
-.v-card--material
-    &__avatar
-        position: relative
-        top: -64px
-        margin-bottom: -32px
+<style lang="scss" scoped>
+.v-card--material {
+    &__avatar {
+        position: relative;
+        top: -64px;
+        margin-bottom: -32px;
+    }
 
-    &__heading
-        position: relative
-        top: -40px
-        transition: .3s ease
-        z-index: 1
+    &__heading {
+        position: relative;
+        top: -40px;
+        transition: 0.3s ease;
+        z-index: 1;
+    }
 
-    &--hover-reveal:hover
-        .v-card--material__heading
-            transform: translateY(-40px)
-.v-sheet
-    border-radius: 4px
+    &--hover-reveal:hover {
+        .v-card--material__heading {
+            transform: translateY(-40px);
+        }
+    }
+}
+
+.v-sheet {
+    border-radius: 4px;
+}
 </style>
