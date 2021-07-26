@@ -10,6 +10,10 @@ or
 yarn install
 ```
 
+# DEMO
+
+[https://jba.keenneed.com](https://jba.keenneed.com)
+
 ### Run the project
 
 ```shell
@@ -40,6 +44,4 @@ or
 yarn build
 ```
 
-### DEMO
 
-online demo: [https://jba.keenneed.com](https://jba.keenneed.com)
