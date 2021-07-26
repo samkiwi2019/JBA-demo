@@ -1,6 +1,10 @@
 # JBA-demo
 
-## Install dependencies
+## DEMO
+
+[https://jba.keenneed.com](https://jba.keenneed.com)
+
+### Install dependencies
 
 ```shell
 npm install
@@ -9,10 +13,6 @@ or
 
 yarn install
 ```
-
-# DEMO
-
-[https://jba.keenneed.com](https://jba.keenneed.com)
 
 ### Run the project
 
